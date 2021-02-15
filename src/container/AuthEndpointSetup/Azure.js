@@ -14,12 +14,9 @@ const Azure = () => {
             scope: [
                 'openid',
                 'offline_access',
-                'mail.read'
-                // 'email',
-                // 'profile',
-                // 'user.read',
-                // 'mailboxsettings.read',
-                // 'calendars.readwrite'
+                'email',
+                'profile',
+                'user.read',
             ].join(" "),
             state: JSON.stringify({ provider: 'Microsoft' }),
             code_challenge: CODE_CHALLENGE,
